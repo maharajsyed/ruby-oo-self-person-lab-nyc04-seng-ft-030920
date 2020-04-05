@@ -47,12 +47,12 @@ attr_reader :name
         return "♪ another one bites the dust ♫"
     end
 
-    def call_friend(friend)
+    def call_friend(friend) #Need help with the method
         [friend, self].each {|o| o.happiness += 3 }
         "Hi #{friend.name}! It's #{self.name}. How are you?"
     end
 
-    def start_conversation(person, topic)
+    def start_conversation(person, topic) #Need Help with the method
         objects = [self, person]
         if topic == "politics"
           objects.each { |o| o.happiness -= 2}
